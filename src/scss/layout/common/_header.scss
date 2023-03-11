@@ -3,9 +3,83 @@
 // -----------------------------------------------------------------------------
 
 #header {
+  @include breakpoint($breakpoint-tablet--large) {
+    top: 0;
+  }
 
+  position: sticky;
+  z-index: $z-index-header;
+  top: var(--header-offset);
+
+  box-shadow: 0 4px 4px rgba(#000000, 0.25);
 }
 
 .header {
+  position: relative;
 
+  &--background {
+    .header__nav {
+      background-color: $palette-black;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+  }
+
+  &__content {
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 18px 8px;
+
+      border-bottom: 4px solid $palette-blue;
+      background-color: $palette-white;
+    }
+
+    position: relative;
+    z-index: 3;
+
+    height: 100px;
+    padding: 24px 8px;
+  }
+
+  &__logo {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin: 0 auto;
+    }
+  }
+
+  &__nav {
+    border-bottom: 5px solid $palette-lightblue;
+    background-color: $palette-darkblue;
+
+    transition: $transition ease;
+  }
+
+  &__contact,
+  &__callback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > * {
+      display: flex;
+      align-items: center;
+
+      font-size: $font-size__text--small;
+    }
+  }
+
+  &__contact {
+    margin-left: auto;
+  }
+
+  &__callback {
+    margin-left: 54px;
+  }
+
+  &__email {
+    font-size: $font-size__text--small;
+  }
 }
