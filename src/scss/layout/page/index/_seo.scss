@@ -1,0 +1,21 @@
+#seo {
+  padding-top: 130px;
+
+  .section__header {
+    margin-bottom: 30px;
+  }
+
+  .section__title {
+    font-size: $font-size__text--large;
+  }
+}
+
+.seo {
+  &__content {
+    line-height: 1.5;
+
+    p {
+      text-indent: 40px;
+    }
+  }
+}

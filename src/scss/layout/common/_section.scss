@@ -1,9 +1,10 @@
 .section {
   &__header {
-
+    margin-bottom: 50px;
   }
 
   &__title {
-
+    font-weight: $weight-Bold;
+    font-size: $font-size__title--medium;
   }
 }
