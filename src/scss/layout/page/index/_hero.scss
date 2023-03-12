@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  padding-bottom: 80px;
+
+  background-image: url("../img/layout/page/index/hero/background.jpg");
+  background-size: 100%;
+}
+
+.hero {
+  position: relative;
+  padding-top: 85px;
+
+  &__subtitle {
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    font-weight: $weight-ExtraBold;
+    font-size: $font-size__title--large;
+
+    text-transform: uppercase;
+  }
+
+  &__description {
+    min-height: 120px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__advantage {
+    position: relative;
+    padding: 5px 24px 8px 40px;
+
+    border-radius: 10px;
+    background: linear-gradient(
+      266deg,
+      #ffffff -3.52%,
+      #d9d9d9 17.07%,
+      #ffffff 36.49%,
+      #d9d9d9 61.24%,
+      #ffffff 97.56%
+    );
+    box-shadow: 0 3px 3px rgba(#000000, 0.25);
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+
+    h3 {
+      font-weight: $weight-Bold;
+      font-size: $font-size__text--large + 4px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: -40px;
+    }
+  }
+
+  &__action {
+    margin-top: 72px;
+    text-align: center;
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.button-primary {
+  background: linear-gradient(
+    90deg,
+    #1984d6 0%,
+    #4da5de 50.83%,
+    #1379cb 101.67%
+  );
+
+  color: $color-text__white;
+  box-shadow: 0 20px 16px -12px rgba(#663407, 0.41);
+}
