@@ -1,0 +1,26 @@
+.card-portfolio {
+  position: relative;
+
+  @media (hover: hover) {
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__picture {
+    overflow: hidden;
+    width: 100%;
+
+    margin-bottom: 16px;
+    border-radius: 10px;
+
+    aspect-ratio: 5 / 4;
+  }
+
+  &__title {
+    padding-left: 8px;
+    font-weight: $weight-Bold;
+  }
+}

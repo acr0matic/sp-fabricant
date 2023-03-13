@@ -11,6 +11,10 @@
     font-weight: $weight-Bold;
     font-size: $font-size__title--medium;
 
+    span {
+      color: $color-text__blue;
+    }
+
     &--underline {
       text-decoration: underline;
     }

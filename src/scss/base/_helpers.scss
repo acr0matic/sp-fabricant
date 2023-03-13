@@ -9,3 +9,11 @@
 .font-secondary {
   font-family: Montserrat, sans-serif;
 }
+
+.container {
+  &--wide {
+    @include breakpoint(min-width 991px) {
+      max-width: 1120px !important;
+    }
+  }
+}

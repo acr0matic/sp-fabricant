@@ -1,0 +1,39 @@
+#portfolio {
+}
+
+.portfolio {
+  &__advantage {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 60px;
+  }
+
+  &__more {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: calc(100% - 38px);
+    border-radius: 10px 10px 100px;
+    background-color: #3058bf;
+
+    color: $color-text__white;
+    font-weight: $weight-Bold;
+
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    img {
+      margin-top: 48px;
+    }
+  }
+}

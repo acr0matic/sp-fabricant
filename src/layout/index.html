@@ -22,38 +22,38 @@
           </p>
 
           <div class="hero__info">
-            <div class="hero__advantage font-secondary">
+            <div class="block-advantage font-secondary">
               <img src="img/layout/page/index/hero/info/1.png" alt="">
-              <h3>3300 кв.м</h3>
+              <h3><span>3300 кв.м</span></h3>
               <span>
                 площадь
                 <br>
                 производства
               </span>
             </div>
-            <!-- /.hero__advantage -->
+            <!-- /.block-advantage -->
 
-            <div class="hero__advantage font-secondary">
+            <div class="block-advantage font-secondary">
               <img src="img/layout/page/index/hero/info/2.png" alt="">
-              <h3>с 1996 г.</h3>
+              <h3><span>с 1996 г.</span></h3>
               <span>
                 работаем
                 <br>
                 со стеклом
               </span>
             </div>
-            <!-- /.hero__advantage -->
+            <!-- /.block-advantage -->
 
-            <div class="hero__advantage font-secondary">
+            <div class="block-advantage font-secondary">
               <img src="img/layout/page/index/hero/info/3.png" alt="">
-              <h3>до 1200</h3>
+              <h3><span>до 1200</span></h3>
               <span>
                 стеклопакетов
                 <br>
                 производим в день
               </span>
             </div>
-            <!-- /.hero__advantage -->
+            <!-- /.block-advantage -->
           </div>
           <!-- /.hero__info -->
         </div>
@@ -223,6 +223,132 @@
       <!-- /.swiper -->
     </div>
     <!-- /.gallery -->
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container container--wide">
+      <div class="section__header">
+        <h2 class="section__title text-center">
+          Посмотрите <span>ОБЪЕКТЫ</span> при остеклении которых
+          <br>
+          использовались наши стеклопакеты
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="portfolio">
+        <div class="portfolio__advantage">
+          <div class="block-advantage font-secondary">
+            <img src="img/layout/page/index/portfolio/info/1.png" alt="">
+            <h3 class="">Более <span>105</span></h3>
+            <span>
+              многоквартирных домов
+            </span>
+          </div>
+          <!-- /.block-advantage -->
+
+          <div class="block-advantage font-secondary">
+            <img src="img/layout/page/index/portfolio/info/2.png" alt="">
+            <h3>Более <span>50</span></h3>
+            <span>
+              коммерческих
+              <br>
+              объектов
+            </span>
+          </div>
+          <!-- /.block-advantage -->
+
+          <div class="block-advantage font-secondary">
+            <img src="img/layout/page/index/portfolio/info/3.png" alt="">
+            <h3>Более <span>1000000 кв.м</span></h3>
+            <span>
+              квартир
+            </span>
+          </div>
+          <!-- /.block-advantage -->
+        </div>
+        <!-- /.portfolio__advantage -->
+
+        <div class="row gy-5">
+          <div class="col-3">
+            @@include('layout/template/card/portfolio.html',
+            {
+            "image": "img/layout/template/card/portfolio/1.jpg",
+            "title": "ТЦ Алимпик",
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/portfolio.html',
+            {
+            "image": "img/layout/template/card/portfolio/2.jpg",
+            "title": "Гранд отель",
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/portfolio.html',
+            {
+            "image": "img/layout/template/card/portfolio/3.jpg",
+            "title": "ЖК Сердце Каспия",
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/portfolio.html',
+            {
+            "image": "img/layout/template/card/portfolio/4.jpg",
+            "title": "ЖК Волжская Ривьера",
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/portfolio.html',
+            {
+            "image": "img/layout/template/card/portfolio/1.jpg",
+            "title": "ТЦ Алимпик",
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/portfolio.html',
+            {
+            "image": "img/layout/template/card/portfolio/2.jpg",
+            "title": "Гранд отель",
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/portfolio.html',
+            {
+            "image": "img/layout/template/card/portfolio/3.jpg",
+            "title": "ЖК Сердце Каспия",
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            <div class="portfolio__more">
+              Ещё больше объектов
+              <img src="img/icons/misc/arrow--big.svg" alt="">
+
+              <a class="stretched-link" href=""></a>
+            </div>
+            <!-- /.portfolio__more -->
+          </div>
+          <!-- /.col-3 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.portfolio -->
+    </div>
+    <!-- /.container -->
   </section>
 
   <section id="article-block" class="section">
