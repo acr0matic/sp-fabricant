@@ -1,0 +1,18 @@
+.card-catalog {
+  position: relative;
+
+  overflow: hidden;
+  border: 1px solid #1288ec;
+  border-radius: 7px;
+
+  background: linear-gradient(270deg, #c7eeff 0%, #ffffff 24%);
+  box-shadow: 0 11px 9px rgba(#093247, 0.73);
+
+  transition: $transition ease;
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+}

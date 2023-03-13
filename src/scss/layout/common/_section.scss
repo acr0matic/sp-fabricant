@@ -10,5 +10,9 @@
   &__title {
     font-weight: $weight-Bold;
     font-size: $font-size__title--medium;
+
+    &--underline {
+      text-decoration: underline;
+    }
   }
 }

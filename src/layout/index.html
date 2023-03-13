@@ -76,26 +76,105 @@
   <section id="about" class="section">
     <div class="container">
       <div class="about">
-        <div class="about__important">
-          Более
-          <br>
-          <span>200+</span>
+        <div class="about__content">
+          <div class="about__important">
+            Более
+            <br>
+            <span>200+</span>
 
-          <img src="img/layout/page/index/about/ellipse.svg" alt="" class="about__shape">
+            <img src="img/layout/page/index/about/ellipse.svg" alt="" class="about__shape">
+          </div>
+
+          <p class="about__text">
+            модификаций стеклопакетов
+            <br>
+            мы разработали за время
+            <br>
+            существования нашей компании.
+          </p>
         </div>
+        <!-- /.about__content -->
 
-        <p class="about__text">
-          модификаций стеклопакетов
-          <br>
-          мы разработали за время
-          <br>
-          существования нашей компании.
-        </p>
+        <img src="img/layout/page/index/about/picture.png" alt="" class="about__picture">
+        <img src="img/layout/page/index/about/cloud.png" alt="" class="about__cloud">
       </div>
       <!-- /.about -->
+    </div>
+    <!-- /.container -->
+  </section>
 
-      <img src="img/layout/page/index/about/picture.png" alt="" class="about__picture">
-      <img src="img/layout/page/index/about/cloud.png" alt="" class="about__cloud">
+  <section id="catalog" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title section__title--underline text-center">
+          Каталог стеклопакетов
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="catalog">
+        <div class="row gy-5">
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/1.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/2.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/3.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/4.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/5.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/6.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/7.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+
+          <div class="col-3">
+            @@include('layout/template/card/catalog.html', {
+            "image": "img/layout/template/card/catalog/8.jpg"
+            })
+          </div>
+          <!-- /.col-3 -->
+        </div>
+        <!-- /.row -->
+
+        <img src="img/layout/page/index/catalog/background.jpg" alt="" class="catalog__background">
+      </div>
+      <!-- /.catalog -->
     </div>
     <!-- /.container -->
   </section>

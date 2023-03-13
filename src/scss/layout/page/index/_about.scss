@@ -12,11 +12,15 @@
 }
 
 .about {
-  display: flex;
-  align-items: flex-end;
+  &__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
 
-  padding-left: 100px;
-  color: $color-text__white;
+    padding-left: 100px;
+    color: $color-text__white;
+  }
 
   &__picture {
     position: absolute;

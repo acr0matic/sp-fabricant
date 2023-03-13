@@ -1,0 +1,12 @@
+#catalog {
+  position: relative;
+}
+
+.catalog {
+  &__background {
+    position: absolute;
+    z-index: -1;
+    bottom: -180px;
+    left: calc(50% + 400px);
+  }
+}
