@@ -1,0 +1,27 @@
+#buy {
+}
+
+.buy {
+  position: relative;
+  padding: 16px 78px 48px;
+  border: 3px solid $palette-blue;
+  border-radius: 34px;
+
+  box-shadow: 0 6px 10px rgba(#000000, 0.25);
+
+  &__text {
+    line-height: 2.15;
+  }
+
+  &__action {
+    margin-top: 64px;
+  }
+
+  &__picture {
+    position: absolute;
+    top: 60%;
+    right: 40px;
+
+    transform: translateY(-50%);
+  }
+}
