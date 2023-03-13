@@ -3,9 +3,64 @@
 // -----------------------------------------------------------------------------
 
 #footer {
+  margin-top: 130px;
+  color: $color-text__white;
 
+  a {
+    color: $color-text__white;
+  }
 }
 
 .footer {
+  &__content {
+    padding-top: 32px;
+    padding-bottom: 40px;
 
+    background-color: $palette-blue;
+  }
+
+  &__heading {
+    margin-bottom: 32px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__nav {
+    margin-bottom: 32px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+
+    font-size: $font-size__text--small - 2px;
+  }
+
+  &__info {
+    padding-top: 18px;
+    padding-bottom: 12px;
+
+    background-color: $palette-darkblue;
+  }
+
+  &__about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font-size: 12px;
+  }
+
+  &__wrapper {
+    & > * {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

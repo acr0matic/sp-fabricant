@@ -6,4 +6,12 @@
       color: $color-text__blue;
     }
   }
+
+  &--yellow {
+    @media (hover: hover) {
+      &:hover {
+        color: $color-text__gold !important;
+      }
+    }
+  }
 }

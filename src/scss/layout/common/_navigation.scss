@@ -90,12 +90,8 @@
   // }
 
   &--footer {
-    @include breakpoint($breakpoint-tablet--large) {
-      justify-content: flex-start;
-    }
-
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     .nav__list {
       display: inline-flex;
@@ -104,15 +100,7 @@
 
     .nav__item {
       &:not(:last-child) {
-        @include breakpoint($breakpoint-tablet) {
-          margin-bottom: 12px;
-        }
-
-        @include breakpoint($breakpoint-mobile--large) {
-          margin-bottom: 8px;
-        }
-
-        margin-bottom: 16px;
+        margin-bottom: 8px;
       }
     }
 
@@ -122,7 +110,7 @@
       }
 
       display: inline-flex;
-      align-items: center;
+      align-items: flex-start;
 
       color: $color-text__white;
     }
