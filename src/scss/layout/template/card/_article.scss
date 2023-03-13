@@ -1,0 +1,33 @@
+.card-article {
+  position: relative;
+
+  &__picture {
+    overflow: hidden;
+
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 3px 3px rgba(#000000, 0.25);
+    aspect-ratio: 5 / 4;
+  }
+
+  &__title {
+    display: -webkit-box;
+    overflow: hidden;
+
+    min-height: 50px;
+    margin-bottom: 12px;
+
+    font-weight: $weight-SemiBold;
+    font-size: $font-size__text--big;
+    text-align: center;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  &__description {
+    font-size: $font-size__text--small;
+  }
+}

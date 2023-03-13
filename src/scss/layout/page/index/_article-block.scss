@@ -1,0 +1,12 @@
+#article-block {
+}
+
+.article-block {
+  position: relative;
+
+  &__link {
+    position: absolute;
+    top: 16.5%;
+    right: -70px;
+  }
+}
