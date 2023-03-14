@@ -1,0 +1,41 @@
+#manufacturing {
+  margin-bottom: 0;
+  padding: 90px 0 355px;
+  background-color: $palette-lightgray;
+}
+
+.manufacturing {
+  position: relative;
+
+  &__video {
+    position: absolute;
+    top: 100px;
+    right: -150px;
+
+    text-align: center;
+  }
+
+  &__play {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-top: -8px;
+
+    color: $color-text__gray;
+    font-size: $font-size__text--small;
+  }
+}
