@@ -2,6 +2,13 @@
   position: relative;
 
   &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 320px;
+      margin: 0 auto 16px;
+
+      border-radius: 12px;
+    }
+
     overflow: hidden;
 
     width: 100%;
@@ -13,6 +20,10 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      min-height: 0;
+    }
+
     display: -webkit-box;
     overflow: hidden;
 

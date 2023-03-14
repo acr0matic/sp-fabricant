@@ -1,5 +1,9 @@
 #seo {
   .section__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 16px;
+    }
+
     margin-bottom: 30px;
   }
 
@@ -13,6 +17,10 @@
     line-height: 1.5;
 
     p {
+      @include breakpoint($breakpoint-tablet) {
+        text-indent: 20px;
+      }
+
       text-indent: 40px;
     }
   }

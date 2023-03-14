@@ -2,6 +2,12 @@
 }
 
 .buy {
+  @include breakpoint($breakpoint-tablet) {
+    padding: 16px 0 48px;
+    border: none;
+    box-shadow: none;
+  }
+
   position: relative;
   padding: 16px 78px 48px;
   border: 3px solid $palette-blue;
@@ -10,14 +16,33 @@
   box-shadow: 0 6px 10px rgba(#000000, 0.25);
 
   &__text {
+    @include breakpoint($breakpoint-tablet) {
+      line-height: $line-height--primary;
+      text-align: center;
+    }
+
     line-height: 2.15;
   }
 
   &__action {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 32px;
+      text-align: center;
+    }
+
     margin-top: 64px;
   }
 
   &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      position: relative;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      margin-top: 8px;
+      transform: rotate(-10deg);
+    }
+
     position: absolute;
     top: 60%;
     right: 40px;

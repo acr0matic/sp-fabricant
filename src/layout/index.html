@@ -60,7 +60,8 @@
         <!-- /.hero__wrapper -->
 
         <picture class="hero__picture">
-          <img src="img/layout/page/index/hero/picture.png" alt="">
+          <source srcset="img/layout/page/index/hero/picture.png" media="(min-width: 768px)" />
+          <img src="img/layout/page/index/hero/picture--mobile.png" alt="">
         </picture>
 
         <div class="hero__action">
@@ -113,57 +114,57 @@
       <!-- /.section__header -->
 
       <div class="catalog">
-        <div class="row gy-5">
-          <div class="col-3">
+        <div class="row gy-3 gy-lg-5">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/1.jpg"
             })
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/2.jpg"
             })
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/3.jpg"
             })
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/4.jpg"
             })
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/5.jpg"
             })
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/6.jpg"
             })
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/7.jpg"
             })
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/catalog.html', {
             "image": "img/layout/template/card/catalog/8.jpg"
             })
@@ -192,8 +193,12 @@
         <!-- /.section__header -->
 
         <div class="manufacturing__video">
-          <img class="manufacturing__preview" src="img/layout/page/index/manufacturing/laptop.png" alt="">
-          <img class="manufacturing__play" src="img/icons/control/play.svg" alt="">
+          <div class="manufacturing__wrapper">
+            <img class="manufacturing__preview" src="img/layout/page/index/manufacturing/laptop.png" alt="">
+            <img class="manufacturing__play" src="img/icons/control/play.svg" alt="">
+          </div>
+          <!-- /.manufaturing__videowrapper -->
+
           <span class="manufacturing__label">Видео по изготовлению стеклопакетов</span>
         </div>
         <!-- /.manufacturing__video -->
@@ -205,7 +210,6 @@
         </p>
       </div>
       <!-- /.manufacturing -->
-
     </div>
     <!-- /.container -->
   </section>
@@ -374,8 +378,8 @@
         </div>
         <!-- /.portfolio__advantage -->
 
-        <div class="row gy-5">
-          <div class="col-3">
+        <div class="row gy-4 gy-lg-5">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/portfolio.html',
             {
             "image": "img/layout/template/card/portfolio/1.jpg",
@@ -384,7 +388,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/portfolio.html',
             {
             "image": "img/layout/template/card/portfolio/2.jpg",
@@ -393,7 +397,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/portfolio.html',
             {
             "image": "img/layout/template/card/portfolio/3.jpg",
@@ -402,7 +406,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/portfolio.html',
             {
             "image": "img/layout/template/card/portfolio/4.jpg",
@@ -411,7 +415,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/portfolio.html',
             {
             "image": "img/layout/template/card/portfolio/1.jpg",
@@ -420,7 +424,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/portfolio.html',
             {
             "image": "img/layout/template/card/portfolio/2.jpg",
@@ -429,7 +433,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             @@include('layout/template/card/portfolio.html',
             {
             "image": "img/layout/template/card/portfolio/3.jpg",
@@ -438,7 +442,7 @@
           </div>
           <!-- /.col-3 -->
 
-          <div class="col-3">
+          <div class="col-6 col-lg-3">
             <div class="portfolio__more">
               Ещё больше объектов
               <img src="img/icons/misc/arrow--big.svg" alt="">
@@ -472,12 +476,12 @@
           Купить их можно по следующим адресам:
         </p>
 
+        <img src="img/layout/page/index/buy/map.jpg" alt="" class="buy__picture">
+
         <div class="buy__action">
           <a href class="button button-primary">Открыть карту с адресами</a>
         </div>
         <!-- /.buy__action -->
-
-        <img src="img/layout/page/index/buy/map.jpg" alt="" class="buy__picture">
       </div>
       <!-- /.buy -->
     </div>
@@ -494,8 +498,8 @@
       <!-- /.section__header -->
 
       <div class="article-block">
-        <div class="row">
-          <div class="col-4">
+        <div class="row gy-5 gy-lg-0">
+          <div class="col-12 col-lg-4">
             @@include('layout/template/card/article.html',
             {
             "image": "img/layout/template/card/article/1.jpg",
@@ -505,7 +509,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             @@include('layout/template/card/article.html',
             {
             "image": "img/layout/template/card/article/2.jpg",
@@ -515,7 +519,7 @@
           </div>
           <!-- /.col-4 -->
 
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             @@include('layout/template/card/article.html',
             {
             "image": "img/layout/template/card/article/3.jpg",
@@ -530,6 +534,11 @@
         <a href="" class="article-block__link">
           <img src="img/layout/page/index/article-block/ellipse.svg" alt="">
         </a>
+
+        <div class="article-block__action">
+          <button class="button button-primary">Другие статьи</button>
+        </div>
+        <!-- /.article-block__action -->
       </div>
       <!-- /.article-block -->
     </div>

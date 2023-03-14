@@ -1,8 +1,17 @@
 #warranty {
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 0;
+    background-color: $palette-lightgray;
+  }
+
   margin-top: -280px;
 }
 
 .warranty {
+  @include breakpoint($breakpoint-tablet) {
+    flex-direction: column;
+  }
+
   display: flex;
   align-items: center;
 
@@ -13,6 +22,11 @@
   }
 
   &__content {
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+      padding: 48px 0 24px;
+    }
+
     position: relative;
     z-index: 2;
 
@@ -30,7 +44,23 @@
       color: $color-text__white;
     }
 
+    .warranty__text {
+      @include breakpoint($breakpoint-tablet) {
+        margin-bottom: 24px;
+        text-align: center;
+      }
+    }
+
     &::before {
+      @include breakpoint($breakpoint-tablet) {
+        right: initial;
+        left: -10px;
+
+        width: 101vw;
+
+        border-radius: 60px 60px 0 0;
+      }
+
       content: "";
       position: absolute;
       z-index: 1;
@@ -53,15 +83,32 @@
   }
 
   &__additional {
+    @include breakpoint($breakpoint-tablet) {
+      padding-bottom: 32px;
+      background-color: $palette-lightgray;
+    }
+
     position: relative;
     background-color: $palette-gray;
 
     .warranty__text {
+      @include breakpoint($breakpoint-tablet) {
+        margin-top: 24px;
+        margin-bottom: 32px;
+        margin-left: 0;
+
+        text-align: center;
+      }
+
       margin-bottom: 105px;
       margin-left: 64px;
     }
 
     .warranty__picture {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
       width: 50vw;
     }
   }
@@ -76,6 +123,10 @@
   }
 
   &__action {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: center;
+    }
+
     margin-bottom: 16px;
   }
 
@@ -85,12 +136,23 @@
   }
 
   &__badge {
+    @include breakpoint($breakpoint-tablet) {
+      right: 30px;
+      bottom: 0;
+      width: 120px;
+    }
+
     position: absolute;
     right: 0;
     bottom: -30px;
   }
 
   &__document {
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+      margin-left: 0;
+    }
+
     position: absolute;
     top: 90%;
     left: 0;
@@ -105,6 +167,10 @@
     }
 
     picture {
+      @include breakpoint($breakpoint-tablet) {
+        width: auto;
+      }
+
       width: 180px;
       height: 100%;
 

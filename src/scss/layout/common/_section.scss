@@ -1,13 +1,26 @@
 .section {
   &:not(:last-child) {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 60px;
+    }
+
     margin-bottom: 130px;
   }
 
   &__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 36px;
+    }
+
     margin-bottom: 50px;
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large + 4px;
+      text-align: center;
+    }
+
     font-weight: $weight-Bold;
     font-size: $font-size__title--medium;
 

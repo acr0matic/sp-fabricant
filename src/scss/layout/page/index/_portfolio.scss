@@ -3,6 +3,26 @@
 
 .portfolio {
   &__advantage {
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column;
+      align-items: center;
+
+      .block-advantage {
+        width: 100%;
+        max-width: 240px;
+        margin-right: 0;
+        margin-left: 32px;
+
+        br {
+          display: none;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
     display: flex;
     justify-content: center;
 
@@ -10,6 +30,13 @@
   }
 
   &__more {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0 12px;
+      border-radius: 10px 10px 60px;
+      font-size: $font-size__text--small;
+      text-align: center;
+    }
+
     position: relative;
 
     display: flex;
@@ -33,6 +60,11 @@
     }
 
     img {
+      @include breakpoint($breakpoint-tablet) {
+        width: 48px;
+        margin-top: 24px;
+      }
+
       margin-top: 48px;
     }
   }

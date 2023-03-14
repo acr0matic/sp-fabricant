@@ -70,24 +70,23 @@
     }
   }
 
-  // &--mobile {
-  //   .nav__list {
-  //     flex-direction: column;
-  //   }
+  &--mobile {
+    .nav__list {
+      flex-direction: column;
+    }
 
-  //   .nav__item {
-  //     &:not(:last-child) {
-  //       margin-bottom: 2px;
-  //     }
-  //   }
+    .nav__item {
+      &:not(:last-child) {
+        margin-bottom: 2px;
+      }
+    }
 
-  //   .nav__link {
-  //     display: block;
-  //     padding: 6px 20px;
-  //     background-color: $palette-gray;
-  //     color: $color-text__white;
-  //   }
-  // }
+    .nav__link {
+      display: block;
+      padding: 6px 20px;
+      background-color: $palette-gray;
+    }
+  }
 
   &--footer {
     display: flex;

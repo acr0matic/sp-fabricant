@@ -5,8 +5,27 @@
   position: relative;
 
   &__link {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
     position: absolute;
     top: 16.5%;
     right: -70px;
+  }
+
+  &__action {
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+    }
+
+    display: none;
+    margin-top: 32px;
+    text-align: center;
+
+    .button {
+      width: 100%;
+      max-width: 240px;
+    }
   }
 }

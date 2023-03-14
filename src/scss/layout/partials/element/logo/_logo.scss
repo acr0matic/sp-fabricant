@@ -8,6 +8,10 @@
   }
 
   &--header {
+    @include breakpoint($breakpoint-tablet) {
+      width: 150px;
+    }
+
     width: 270px;
   }
 }

@@ -11,14 +11,29 @@
 }
 
 .hero {
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 32px;
+  }
+
   position: relative;
   padding-top: 85px;
+
+  &__subtitle,
+  &__description {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: center;
+    }
+  }
 
   &__subtitle {
     margin-bottom: 8px;
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__title--small;
+    }
+
     margin-bottom: 25px;
 
     font-weight: $weight-ExtraBold;
@@ -28,23 +43,61 @@
   }
 
   &__description {
+    @include breakpoint($breakpoint-tablet) {
+      min-height: auto;
+      margin-top: 40px;
+
+      br {
+        display: none;
+      }
+    }
+
     min-height: 120px;
   }
 
   &__info {
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-left: 54px;
+
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
     display: flex;
     align-items: center;
     margin-top: 20px;
   }
 
   &__action {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 32px;
+    }
+
     margin-top: 72px;
     text-align: center;
   }
 
   &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      top: 180px;
+      right: 0;
+    }
+
     position: absolute;
     top: 0;
     right: -50px;
+  }
+
+  &__wrapper {
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 }

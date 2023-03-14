@@ -1,4 +1,8 @@
 #about {
+  @include breakpoint($breakpoint-tablet) {
+    padding: 54px 0 32px;
+  }
+
   position: relative;
   overflow: hidden;
 
@@ -13,6 +17,14 @@
 
 .about {
   &__content {
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-left: 0;
+    }
+
     position: relative;
     z-index: 2;
     display: flex;
@@ -23,6 +35,10 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
     position: absolute;
     top: 0;
     left: 0;
@@ -31,6 +47,13 @@
   }
 
   &__important {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 54px;
+
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
     position: relative;
 
     font-weight: $weight-Bold;
@@ -39,12 +62,23 @@
     line-height: 1;
 
     span {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: 40px;
+      }
+
       font-weight: $weight-ExtraBold;
       font-size: 86px;
     }
   }
 
   &__text {
+    @include breakpoint($breakpoint-tablet) {
+      margin: 0;
+      font-size: $font-size__text--small;
+      text-align: center;
+      transform: none;
+    }
+
     margin-left: 60px;
     font-size: $font-size__title--small;
 
@@ -52,6 +86,12 @@
   }
 
   &__shape {
+    @include breakpoint($breakpoint-tablet) {
+      left: 50%;
+      width: 150px;
+      height: 150px;
+    }
+
     position: absolute;
     top: 55%;
     left: 45%;
@@ -66,6 +106,10 @@
   }
 
   &__cloud {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
     position: absolute;
     right: 0;
     bottom: -65%;

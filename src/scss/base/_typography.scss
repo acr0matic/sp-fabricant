@@ -3,6 +3,10 @@
 // -----------------------------------------------------------------------------
 
 body {
+  @include breakpoint($breakpoint-tablet) {
+    font-size: $font-size__text--small;
+  }
+
   color: $color-text__primary;
 
   font-size: $font-size__text--regular;

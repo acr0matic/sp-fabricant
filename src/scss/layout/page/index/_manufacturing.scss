@@ -1,18 +1,36 @@
 #manufacturing {
+  @include breakpoint($breakpoint-tablet) {
+    padding-bottom: 60px;
+  }
+
   margin-bottom: 0;
   padding: 90px 0 355px;
   background-color: $palette-lightgray;
 }
 
 .manufacturing {
+  @include breakpoint($breakpoint-tablet) {
+    text-align: center;
+  }
+
   position: relative;
 
   &__video {
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+      width: 80%;
+      margin: 0 auto;
+    }
+
     position: absolute;
     top: 100px;
     right: -150px;
 
     text-align: center;
+  }
+
+  &__wrapper {
+    position: relative;
   }
 
   &__play {
@@ -37,5 +55,11 @@
 
     color: $color-text__gray;
     font-size: $font-size__text--small;
+  }
+
+  &__text {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 32px;
+    }
   }
 }

@@ -15,17 +15,17 @@ if (header) {
 
   // ------------------------------------------------------------------
 
-  // const mobile = document.querySelector('.mobile-menu');
-  // const mobileOverlay = document.querySelector('.mobile-menu__overlay');
+  const mobile = document.querySelector('.mobile-menu');
+  const mobileOverlay = document.querySelector('.mobile-menu__overlay');
 
-  // const mobileBurger = header.querySelector('.hamburger');
+  const mobileBurger = header.querySelector('.hamburger');
 
-  // mobileBurger.addEventListener('click', () => Menu());
-  // mobileOverlay.addEventListener('click', () => Menu());
+  mobileBurger.addEventListener('click', () => Menu());
+  mobileOverlay.addEventListener('click', () => Menu());
 
-  // function Menu() {
-  //   mobile.classList.toggle(StyleСlass.mobile.open);
-  //   mobileBurger.classList.toggle('is-active')
-  //   document.body.classList.toggle('disable-scroll');
-  // }
+  function Menu() {
+    mobile.classList.toggle(StyleСlass.mobile.open);
+    mobileBurger.classList.toggle('is-active')
+    document.body.classList.toggle('disable-scroll');
+  }
 }
