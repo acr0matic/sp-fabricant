@@ -18,6 +18,7 @@
   position: relative;
   padding-top: 85px;
 
+  &__title,
   &__subtitle,
   &__description {
     @include breakpoint($breakpoint-tablet) {
@@ -26,7 +27,13 @@
   }
 
   &__subtitle {
-    margin-bottom: 8px;
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--small;
+    }
+
+    margin-bottom: 4px;
+    font-weight: $weight-Regular;
+    font-size: $font-size__text--big;
   }
 
   &__title {

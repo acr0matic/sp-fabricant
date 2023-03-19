@@ -13,11 +13,22 @@
         margin-right: 0;
         margin-left: 32px;
 
+        img {
+          @include breakpoint($breakpoint-tablet) {
+            left: -40px;
+            width: 60px;
+          }
+        }
+
         br {
           display: none;
         }
 
         &:not(:last-child) {
+          @include breakpoint($breakpoint-tablet) {
+            margin-bottom: 32px;
+          }
+
           margin-bottom: 16px;
         }
       }

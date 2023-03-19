@@ -14,6 +14,10 @@
 
 .seo {
   &__content {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: justify;
+    }
+
     line-height: 1.5;
 
     p {

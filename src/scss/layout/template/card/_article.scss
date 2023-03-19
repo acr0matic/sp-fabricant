@@ -39,6 +39,10 @@
   }
 
   &__description {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: justify;
+    }
+
     font-size: $font-size__text--small;
   }
 }

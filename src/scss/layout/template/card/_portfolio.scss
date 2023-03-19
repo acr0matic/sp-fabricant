@@ -10,6 +10,11 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+
     overflow: hidden;
     width: 100%;
 
@@ -20,6 +25,11 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet) {
+      padding-left: 0;
+      font-size: $font-size__text--small;
+    }
+
     padding-left: 8px;
     font-weight: $weight-Bold;
   }

@@ -85,6 +85,10 @@
       display: block;
       padding: 6px 20px;
       background-color: $palette-gray;
+
+      br {
+        display: none;
+      }
     }
   }
 

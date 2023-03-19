@@ -1,5 +1,6 @@
 #manufacturing {
   @include breakpoint($breakpoint-tablet) {
+    padding-top: 30px;
     padding-bottom: 60px;
   }
 
@@ -31,6 +32,14 @@
 
   &__wrapper {
     position: relative;
+
+    @media (hover: hover) {
+      &:hover {
+        .manufacturing__play {
+          opacity: 0.6;
+        }
+      }
+    }
   }
 
   &__play {
@@ -41,12 +50,6 @@
 
     transform: translate(-50%, -50%);
     transition: $transition ease;
-
-    @media (hover: hover) {
-      &:hover {
-        opacity: 0.6;
-      }
-    }
   }
 
   &__label {

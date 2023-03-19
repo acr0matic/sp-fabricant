@@ -43,6 +43,10 @@
   }
 
   img {
+    @include breakpoint($breakpoint-tablet) {
+      left: -50px;
+    }
+
     position: absolute;
     top: 0;
     left: -40px;
