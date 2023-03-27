@@ -1,0 +1,22 @@
+#blog {
+  background-color: $palette-lightgray;
+}
+
+.blog {
+  position: relative;
+
+  .row {
+    margin-bottom: -64px;
+
+    & > div {
+      @include breakpoint($breakpoint-tablet) {
+        margin-bottom: 32px;
+      }
+
+      margin-bottom: 64px;
+    }
+  }
+
+  &::after {
+  }
+}

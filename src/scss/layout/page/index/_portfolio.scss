@@ -1,4 +1,9 @@
 #portfolio {
+  .section__title br {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+  }
 }
 
 .portfolio {
@@ -10,19 +15,29 @@
       .block-advantage {
         width: 100%;
         max-width: 240px;
-        margin-right: 0;
         margin-left: 32px;
+      }
+    }
 
-        img {
-          @include breakpoint($breakpoint-tablet) {
-            left: -40px;
-            width: 60px;
-          }
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 60px;
+
+    .block-advantage {
+      br {
+        display: none;
+      }
+
+      img {
+        @include breakpoint($breakpoint-tablet) {
+          left: -40px;
+          width: 60px;
         }
 
-        br {
-          display: none;
-        }
+        top: -10px;
+        left: -50px;
+        width: 80px;
 
         &:not(:last-child) {
           @include breakpoint($breakpoint-tablet) {
@@ -32,12 +47,16 @@
           margin-bottom: 16px;
         }
       }
+
+      &:not(:last-child) {
+        @include breakpoint($breakpoint-tablet) {
+          margin-right: 0;
+          margin-bottom: 24px;
+        }
+
+        margin-right: 75px;
+      }
     }
-
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 60px;
   }
 
   &__more {

@@ -1,3 +1,50 @@
 [data-editor="default"] {
-  font-size: $font-size__text--regular;
+  h2 {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--big;
+    }
+
+    font-size: $font-size__text--large + 6px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+
+  a {
+    text-decoration: underline;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-text__blue;
+      }
+    }
+  }
+
+  blockquote {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 24px;
+    }
+
+    display: block;
+
+    padding: 36px 72px;
+    border: 2px solid $palette-blue;
+    border-radius: 15px;
+
+    text-align: justify;
+  }
+
+  ul,
+  ol {
+    padding-left: 24px;
+    list-style-type: initial;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
 }

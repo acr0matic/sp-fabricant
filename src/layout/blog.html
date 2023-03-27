@@ -1,0 +1,87 @@
+@@include('layout/partials/header.html')
+
+<main id="blog-page">
+  <section id="blog" class="section">
+    <div class="container">
+      <ol class="page__breadcrumbs">
+        <li>
+          <a class="link" href="">Главная</a>
+        </li>
+
+        <li>
+          <span>Статьи</span>
+        </li>
+      </ol>
+
+      <div class="page__header">
+        <h1 class="page__title text-center">
+          Полезные статьи
+        </h1>
+      </div>
+      <!-- /.page__header -->
+
+      <div class="blog">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            @@include('layout/template/card/blog.html',
+            {
+            "image": "img/layout/template/card/article/1.jpg",
+            "title": "Чем отличается стекло <br> от стеклопакета?",
+            })
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 col-lg-4">
+            @@include('layout/template/card/blog.html',
+            {
+            "image": "img/layout/template/card/article/1.jpg",
+            "title": "Чем отличается стекло <br> от стеклопакета?",
+            })
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 col-lg-4">
+            @@include('layout/template/card/blog.html',
+            {
+            "image": "img/layout/template/card/article/1.jpg",
+            "title": "Чем отличается стекло <br> от стеклопакета?",
+            })
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 col-lg-4">
+            @@include('layout/template/card/blog.html',
+            {
+            "image": "img/layout/template/card/article/1.jpg",
+            "title": "Чем отличается стекло <br> от стеклопакета?",
+            })
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 col-lg-4">
+            @@include('layout/template/card/blog.html',
+            {
+            "image": "img/layout/template/card/article/1.jpg",
+            "title": "Чем отличается стекло <br> от стеклопакета?",
+            })
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 col-lg-4">
+            @@include('layout/template/card/blog.html',
+            {
+            "image": "img/layout/template/card/article/1.jpg",
+            "title": "Чем отличается стекло <br> от стеклопакета?",
+            })
+          </div>
+          <!-- /.col-4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.blog -->
+    </div>
+    <!-- /.container -->
+  </section>
+</main>
+
+@@include('layout/partials/footer.html')

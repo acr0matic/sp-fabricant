@@ -1,0 +1,15 @@
+#article {
+}
+
+.article {
+  &__nav {
+    div {
+      margin-bottom: 35px;
+
+      color: $color-text__blue;
+
+      font-weight: $weight-SemiBold;
+      font-size: $font-size__text--large;
+    }
+  }
+}

@@ -3,5 +3,55 @@
 // -----------------------------------------------------------------------------
 
 .page {
+  &__breadcrumbs {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
 
+    margin-top: 18px;
+    margin-bottom: 24px;
+
+    li {
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--small;
+      }
+
+      font-weight: $weight-Medium;
+
+      span {
+        color: $color-text__blue;
+      }
+
+      a {
+        color: $color-text__gray;
+      }
+
+      &:not(:last-child) {
+        &::after {
+          content: "/";
+          margin-right: 4px;
+
+          color: $color-text__gray;
+        }
+      }
+    }
+  }
+
+  &__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 32px;
+    }
+
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large + 4px;
+      text-align: center;
+    }
+
+    font-weight: $weight-SemiBold;
+    font-size: $font-size__title--medium;
+  }
 }

@@ -1,0 +1,62 @@
+.card-blog {
+  @include breakpoint($breakpoint-tablet) {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+
+    border-radius: $border-radius;
+
+    background-color: $palette-white;
+    box-shadow: 0 4px 13px rgba(#000000, 0.15);
+  }
+
+  position: relative;
+
+  @media (hover: hover) {
+    &:hover {
+      .card-blog__title {
+        color: $color-text__blue;
+      }
+    }
+  }
+
+  &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      margin: 0 auto 16px;
+
+      border-radius: 12px;
+      box-shadow: none;
+    }
+
+    overflow: hidden;
+
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: $border-radius;
+
+    box-shadow: 0 3px 3px rgba(#000000, 0.25);
+    aspect-ratio: 1 / 1;
+  }
+
+  &__title {
+    display: -webkit-box;
+    overflow: hidden;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--large;
+    text-align: center;
+
+    transition: $transition ease;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  &__description {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: justify;
+    }
+
+    font-size: $font-size__text--small;
+  }
+}

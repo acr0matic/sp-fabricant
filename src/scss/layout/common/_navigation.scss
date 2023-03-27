@@ -70,6 +70,22 @@
     }
   }
 
+  &--article {
+    .nav__list {
+      flex-direction: column;
+    }
+
+    .nav__item {
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+
+    .nav__link {
+      text-decoration: underline;
+    }
+  }
+
   &--mobile {
     .nav__list {
       flex-direction: column;
