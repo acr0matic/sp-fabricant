@@ -1,4 +1,9 @@
 #buy {
+  .section__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 4px;
+    }
+  }
 }
 
 .buy {
@@ -17,6 +22,7 @@
 
   &__text {
     @include breakpoint($breakpoint-tablet) {
+      font-weight: $weight-Medium;
       line-height: $line-height--primary;
       text-align: center;
     }
@@ -26,11 +32,24 @@
 
   &__action {
     @include breakpoint($breakpoint-tablet) {
-      margin-top: 32px;
+      margin-top: 8px;
       text-align: center;
     }
 
     margin-top: 64px;
+  }
+
+  &__help {
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+    }
+
+    display: none;
+    margin-top: 8px;
+
+    color: $color-text__gray;
+    font-size: $font-size__text--small - 2px;
+    text-align: center;
   }
 
   &__picture {
@@ -39,8 +58,12 @@
       z-index: -1;
       top: 0;
       right: 0;
+
+      width: 240px;
+      margin: 0 auto;
       margin-top: 8px;
-      transform: rotate(-10deg);
+
+      transform: rotate(-5deg);
     }
 
     position: absolute;

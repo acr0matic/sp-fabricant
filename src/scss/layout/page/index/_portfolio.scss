@@ -42,8 +42,11 @@
 
   &__more {
     @include breakpoint($breakpoint-tablet) {
+      height: calc(100% - 28px);
       padding: 0 12px;
-      border-radius: 10px 10px 60px;
+
+      border-radius: 4px 4px 60px;
+
       font-size: $font-size__text--small;
       text-align: center;
     }

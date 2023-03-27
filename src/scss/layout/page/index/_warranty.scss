@@ -85,7 +85,7 @@
   &__additional {
     @include breakpoint($breakpoint-tablet) {
       padding-bottom: 32px;
-      background-color: $palette-lightgray;
+      background-color: $palette-white;
     }
 
     position: relative;

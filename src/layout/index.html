@@ -291,7 +291,7 @@
 
   <section id="gallery" class="section">
     <div class="gallery">
-      <div class="swiper">
+      <div class="swiper slider-gallery">
         <div class="swiper-wrapper gallery__grid">
           <div class="swiper-slide">
             <picture class="gallery__picture lazy">
@@ -329,6 +329,8 @@
           <!-- /.swiper-slide -->
         </div>
         <!-- /.swiper-wrapper -->
+
+        <div class="swiper-pagination"></div>
       </div>
       <!-- /.swiper -->
     </div>
@@ -471,16 +473,23 @@
         </div>
         <!-- /.section__header -->
 
-        <p class="buy__text">
+        <p class="buy__text d-none d-md-block">
           <b>Более 150+</b> компаний уже реализуют наши стеклопакеты
           <br>
           Купить их можно по следующим адресам:
+        </p>
+
+        <p class="buy__text d-block d-md-none">
+          Более 150 компаний
+          <br>
+          реализуют наши стеклопакеты
         </p>
 
         <img src="img/layout/page/index/buy/map.jpg" alt="" class="buy__picture">
 
         <div class="buy__action">
           <a href class="button button-primary">Открыть карту с адресами</a>
+          <span class="buy__help">Откройте карту и выберите компанию</span>
         </div>
         <!-- /.buy__action -->
       </div>

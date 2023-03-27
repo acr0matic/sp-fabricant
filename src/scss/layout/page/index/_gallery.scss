@@ -1,10 +1,19 @@
 #gallery {
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 0;
+    background-color: $palette-white;
+  }
+
   padding: 32px 0;
   background-color: $palette-gray;
 }
 
 .gallery {
   &__grid {
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+    }
+
     display: grid;
 
     & > * {
@@ -31,6 +40,11 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      filter: none;
+      aspect-ratio: 16 / 10;
+    }
+
     width: 100%;
     height: 100%;
 

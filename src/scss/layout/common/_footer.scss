@@ -61,6 +61,7 @@
   &__about {
     @include breakpoint($breakpoint-tablet) {
       flex-direction: column-reverse;
+      color: $color-text__gray;
 
       br {
         display: none;

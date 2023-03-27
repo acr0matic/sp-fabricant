@@ -1,4 +1,9 @@
 .button {
+  @include breakpoint($breakpoint-tablet) {
+    padding: 14px 32px;
+    border-radius: 10px;
+  }
+
   display: inline-block;
   padding: 18px 32px;
 

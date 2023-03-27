@@ -1,9 +1,13 @@
 .card-article {
+  @include breakpoint($breakpoint-tablet) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   position: relative;
 
   &__picture {
     @include breakpoint($breakpoint-tablet) {
-      max-width: 320px;
       margin: 0 auto 16px;
 
       border-radius: 12px;
